@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+
+# Import Current Theme
+DIR="$HOME/.config/bspwm"
+STYLE="default"
+RASI="~/.config/rofi/launchers/type-4/style-5.rasi"
+
+# Run
+rofi \
+    -show run \
+	-theme ${RASI}

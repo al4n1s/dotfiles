@@ -1,0 +1,121 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Doasdasdasn't print a new line at the start of the prompt
+add_newline = false
+
+format = """
+[╭───](white bold)   $directory$git_branch$python$aws$php$perl$conda$ruby$rust$dart
+[╰─](white bold)$character
+"""
+
+# Replace the "❯" symbol in the prompt with "➜"
+# [character]                            # The name of the module we are configuring is "character"
+# success_symbol = "[ ❯](bold white)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+# error_symbol = "[ ❯](bold white)"
+[character]
+error_symbol = "[](bold red) "
+success_symbol = "[](bold #8aa6a7)"
+
+
+
+# Make prompt a single line instead of two lines
+[line_break]
+disabled = false
+
+
+[aws]
+symbol = " "
+
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+style = "bold italic white"
+read_only = " 🔒"
+truncation_length = 2
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "bold italic purple"
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = ""
+format = "[$symbol]($style) "
+style = "bold blue"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+format = "[$symbol]($style) "
+
+[swift]
+symbol = "ﯣ "
+
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[time]
+disabled = false
+format = '[$time]($style) '
+time_format = '%R'
+style = 'italic dimmed white'
+
+[hostname]
+ssh_only = false
+format = '[$hostname]($style)\)'
+trim_at = "-"
+style = " italic bold dimmed white"
+disabled = false
+
+[username]
+format = '\([$user]($style)'
+style_user = "italic bold dimmed white"
+show_always = true

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+paplay ~/Músicas/rice-audios/notification-sound.wav
