@@ -1,6 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Doasdasdasn't print a new line at the start of the prompt
 add_newline = false
 
 format = """
@@ -8,24 +7,15 @@ format = """
 [╰─](white bold)$character
 """
 
-# Replace the "❯" symbol in the prompt with "➜"
-# [character]                            # The name of the module we are configuring is "character"
-# success_symbol = "[ ❯](bold white)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-# error_symbol = "[ ❯](bold white)"
 [character]
 error_symbol = "[](bold red) "
 success_symbol = "[](bold #8aa6a7)"
 
-
-
-# Make prompt a single line instead of two lines
 [line_break]
 disabled = false
 
-
 [aws]
 symbol = " "
-
 
 [conda]
 symbol = " "
@@ -96,7 +86,6 @@ format = "[$symbol]($style) "
 
 [swift]
 symbol = "ﯣ "
-
 
 [git_commit]
 commit_hash_length = 8
